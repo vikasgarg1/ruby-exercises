@@ -9,3 +9,5 @@
 # > 5
 # > 10
 # > 15
+
+def multiply_by(number)

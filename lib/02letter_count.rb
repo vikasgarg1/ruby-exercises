@@ -6,3 +6,13 @@
 # letter_count('banana')
 #
 # > {"b" => 1, "a" => 3, "n" => 2}
+
+def letter_count(s)
+  Hash[
+     s.split('')
+     .group_by{ |c| c }
+     .map{ |k, v| [k, v.size] }
+  ]
+end
+
+p letter_count("banana")

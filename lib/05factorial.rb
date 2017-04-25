@@ -9,3 +9,13 @@
 #
 # > 120
 #
+
+def factorial(number)
+  total = 1
+  (1..number).each do |index|
+    total *= index
+  end
+  p total
+end
+
+factorial(5)
